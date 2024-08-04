@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#about-mode {
+  --bg-color: #2C3E50; 
+  --text-color: white;
+}
+
+body  {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+main p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}

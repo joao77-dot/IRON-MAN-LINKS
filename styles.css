@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/*
+  #FF0000
+  #AAAAAA
+*/
+
+.dark {
+    background-color: #111111;
+    color: #ebebeb;
+  }
+  
+  .dark-link {
+    color: #f13239;
+    border-bottom: 1px solid #f13239;
+  }
+  
+  .dark-link:hover,
+  .dark-link:focus {
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  header {
+    padding: 1px;
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8px;
+    column-gap: 24px;
+  }
+  
+  header img {
+    width: 120px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header ul li + li {
+    margin-left: 24px;
+  }
+  
+  header a {
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  header a:hover,
+  header a:focus {
+    color: #f13239;
+    border-bottom: 1px solid #f13239;
+  }
+
+#iron-mode {
+  --bg-color: #2C3E50; 
+  --hover-color: #E74C3C;
+  --text-color: white;
+  --button-icon: '🤖';
+  --hover-button-icon: '👔';
+  --hover-button-color: #FF0000;
+}
+
+#tony-mode {
+  --bg-color: #34495E;
+  --hover-color: #2ECC71;
+  --text-color: white;
+  --button-icon: '👔';
+  --hover-button-icon: '🤖';
+  --hover-button-color: #AAAAAA;
+}
+
+body  {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.Cabeçario {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: center;
+    text-align: justify;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.459);
+    font-style: oblique;
+    flex-direction: column;
+    text-decoration: solid;
+    margin: 0;
+    list-style: lower-roman;
+    text-decoration: none;
+}
+
+.Cabeçario a:hover {
+  color: rgb(204, 6, 6);
+  transition: 0.3s;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+main img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+main img:hover {
+  box-shadow: 1px 1px 50px var(--hover-color);
+}
+
+
+main button {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+main button::before {
+  content: var(--button-icon);
+  font-size: 2em;
+}
+
+main button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 50px var(--hover-button-color);
+}
+
+main button:hover::before {
+  content: var(--hover-button-icon);
+}
+
+main ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+main ul li {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
